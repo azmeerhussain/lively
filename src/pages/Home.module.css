@@ -1,0 +1,163 @@
+.splashContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoPattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.04;
+    pointer-events: none;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.contentWrapper {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.tagline {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.25rem;
+}
+
+.heroTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.highlight {
+    color: var(--orange);
+}
+
+.heroDescription {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--gray);
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contentWrapper {
+    animation: fadeIn 1s ease-out;
+}
+
+.pageWrapper {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.detailsSection {
+    min-height: 100vh;
+    background-color: var(--off-white);
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.featureGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.featureCard {
+    background: var(--white);
+    aspect-ratio: 1 / 1; 
+    width: 280px; 
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+    flex: none; 
+}
+
+.featureCard h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.featureCard p {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.15);
+}
+
+.featureIcon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.featureCard h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.featureCard p {
+    color: var(--gray);
+    line-height: 1.6;
+}

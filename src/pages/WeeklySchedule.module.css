@@ -1,0 +1,102 @@
+.container { padding: 40px; background-color: #fcfcfc; min-height: 100vh; font-family: 'Inter', sans-serif; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.dropdownContainer { position: relative; display: inline-block; }
+
+.monthDropdown {
+  appearance: none;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 40px 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monthDropdown:hover {
+  background-color: #ffffff;
+  border-color: #ff8c00;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.monthDropdown:focus { outline: none; border-color: #ff8c00; }
+
+.dropdownArrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+  font-size: 0.8rem;
+}
+
+.mainGrid { display: grid; grid-template-columns: 1.8fr 1fr; gap: 24px; }
+.card { background: white; border: 1px solid #efefef; border-radius: 20px; padding: 24px; margin-bottom: 20px; }
+.planCard { min-height: 80vh; }
+
+.trackerContent { display: flex; align-items: center; gap: 20px; }
+.trackerNumber { font-size: 3rem; font-weight: 800; color: #ff8c00; margin: 0; line-height: 1; }
+.trackerText h3 { margin: 0; font-size: 1.1rem; color: #333; }
+.subText { color: #888; font-size: 0.85rem; margin: 4px 0; }
+
+.calendarGrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background-color: #eee; border: 1px solid #eee; border-radius: 12px; overflow: hidden; }
+.dayHeader { text-align: center; padding: 12px; background: #fdfdfd; font-size: 0.75rem; font-weight: bold; color: #888; }
+.monthDay { background-color: #fff; min-height: 110px; padding: 8px; transition: background 0.2s; }
+.dayNum { font-size: 0.75rem; color: #bbb; }
+.event { font-size: 0.7rem; padding: 6px; margin-top: 4px; border-radius: 6px; background: #fff3e0; color: #e65100; cursor: pointer; transition: transform 0.1s; }
+.eventCompleted { background: #e8f5e9 !important; color: #2e7d32 !important; border-left: 3px solid #4caf50; }
+
+.modalOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 100; backdrop-filter: blur(4px); }
+.modalContent { background: white; width: 480px; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.2); position: relative; }
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.videoContainer { width: 100%; aspect-ratio: 16/9; background: #000; }
+.modalVideoFrame { width: 100%; height: 100%; border: none; }
+.modalBody { padding: 24px; }
+.modalHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.xpBadge { background: #fff3e0; color: #e65100; padding: 4px 10px; border-radius: 10px; font-weight: 700; font-size: 0.85rem; }
+
+.primaryActionBtn { width: 100%; padding: 16px; background: #ff8c00; color: white; border: none; border-radius: 14px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+.finishBtn { width: 100%; padding: 16px; background: #4caf50; color: white; border: none; border-radius: 14px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+.disabledBtn { width: 100%; padding: 16px; background: #f0f0f0; color: #999; border-radius: 14px; cursor: not-allowed; }
+
+.cancelLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  text-decoration: underline;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.cancelLink:hover { color: #ef4444; }
+.eventDisabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.checkIcon {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}

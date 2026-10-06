@@ -1,0 +1,219 @@
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fcfcfc;
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.container {
+  padding: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.titleSection h1 {
+  font-size: 2.8rem;
+  font-weight: 850;
+  color: #1a1a1a;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #888;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.levelBadge {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.levelNum {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.xpBarContainer {
+  width: 120px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.xpBarFill {
+  height: 100%;
+  background: #ff8c00;
+  transition: width 0.5s ease-out;
+}
+
+.xpText {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border-color: #ff8c00;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cardHeader h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.biometricContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.statLarge {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.statVal {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.statUnit {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #bbb;
+}
+
+.goalTag {
+  align-self: flex-start;
+  margin-top: 16px;
+  background: #fff5e6;
+  color: #ff8c00;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.scheduleVisual p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.dayGrid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.dayDot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #ddd;
+  transition: all 0.2s;
+}
+
+.activeDay {
+  background: #1a1a1a;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.questContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.questIcon {
+  font-size: 2rem;
+}
+
+.questInfo p {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.equipmentSummary strong {
+  color: #1a1a1a;
+  border-bottom: 2px solid #ff8c00;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  color: #ff8c00;
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.editBtn:hover {
+  opacity: 0.7;
+}
