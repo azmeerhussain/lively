@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --orange: #FF6B35;
+    --orange-light: #FF8C5A;
+    --orange-dark: #E85A2A;
+    --white: #FFFFFF;
+    --black: #1A1A1A;
+    --gray: #666666;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
