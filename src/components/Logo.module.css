@@ -1,0 +1,17 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoSvg {
+    width: 50px;
+    height: 50px;
+    fill: var(--orange);
+}
+
+.brandName {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
